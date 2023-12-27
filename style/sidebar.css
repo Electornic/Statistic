@@ -1,0 +1,22 @@
+.sidebar__contents--container {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 180px;
+  height: fit-content;
+
+  border: 1px solid black;
+}
+
+.sidebar__item--block-text {
+  padding: 10px 20px;
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.sidebar__item--block-text:hover {
+  background-color: #f2f2f2;
+
+  border: 1px solid darkgray;
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import { Sidebar } from "@/parts";
+// import './globals.css'
+import '@/style/main.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className={'header'}>
+          더움바다의 개발 테스트 페이지
+        </div>
+        <div className={'main__contents--container'}>
+          <Sidebar />
+          <div className={'main__contents--block'}>
+            {children}
+          </div>
+        </div>
+        <div className={'footer'}>
+          Created by Electornic
+        </div>
+      </body>
     </html>
   )
 }

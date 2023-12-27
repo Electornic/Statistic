@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+
+  overflow-x: hidden;
+
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+
+  padding: 15px 200px;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+
+  background-color: yellowgreen;
+}
+
+.main__contents--container {
+  display: flex;
+  padding-bottom: 120px;
+}
+
+.main__contents--block {
+  padding: 30px 200px 30px 20px;
+}
+
+.footer {
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+
+  padding: 50px 200px;
+
+  text-align: end;
+
+  background-color: white;
+}
