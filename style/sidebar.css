@@ -10,9 +10,11 @@
 
 .sidebar__item--block-text {
   padding: 10px 20px;
-  cursor: pointer;
 
   text-align: center;
+
+  text-decoration: none;
+  color: black;
 }
 
 .sidebar__item--block-text:hover {
