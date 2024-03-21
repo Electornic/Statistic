@@ -3,6 +3,7 @@ import {useAccount, useConnect, useDisconnect, usePublicClient} from "wagmi";
 import styles from './page.module.css';
 import {useEffect, useState} from "react";
 import {formatEther} from "viem";
+import Image from "next/image";
 
 export default function Blockchain() {
   const { connect, connectors: [injectedConnector] } = useConnect();
@@ -52,6 +53,7 @@ export default function Blockchain() {
           </div>
         </>
       )}
+      <Image src={'/test'} alt={'noo'} width={50} height={50} />
     </div>
   )
 }
