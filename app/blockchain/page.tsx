@@ -53,7 +53,7 @@ export default function Blockchain() {
           </div>
         </>
       )}
-      <Image src={'/test'} alt={'noo'} width={50} height={50} />
+      <Image src={'/img-advantage-depin-step1.png'} alt={'noo'} width={50} height={50} />
     </div>
   )
 }
