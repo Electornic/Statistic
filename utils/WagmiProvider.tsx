@@ -1,6 +1,6 @@
-'use client';
+"use server";
 
-import {createConfig, http, WagmiConfig} from "wagmi";
+import { createConfig, http, WagmiProvider as _WagmiProvider } from "wagmi";
 import {mainnet, sepolia} from "wagmi/chains";
 import {PropsWithChildren} from "react";
 
@@ -13,10 +13,10 @@ const wagmiConfig = createConfig({
   ssr: true
 })
 
-export function WagmiProvider({ children }: PropsWithChildren<{}>) {
+export async function WagmiProvider({ children }: PropsWithChildren<{}>) {
   return (
-    <WagmiConfig config={wagmiConfig}>
+    <_WagmiProvider config={wagmiConfig}>
       {children}
-    </WagmiConfig>
+    </_WagmiProvider>
   )
 }

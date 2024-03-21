@@ -1,6 +1,8 @@
+import styles from './page.module.css';
+
 export default function Home() {
   return (
-    <div>
+    <div className={styles.test}>
       Test Test Test Test Test Test Test Test Test Test Test Test
       Test Test Test Test Test Test Test Test Test Test Test Test
       Test Test Test Test Test Test Test Test Test Test Test Test
