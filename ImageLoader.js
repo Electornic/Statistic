@@ -10,7 +10,7 @@
 // }
 
 export default function cloudfrontLoader({ src, width, quality }) {
-  const url = new URL(`https://d3kgyarsxd0crm.cloudfront.net${src}`);
+  const url = new URL(`https://d3hnpwnfp25ra8.cloudfront.net${src}`);
   url.searchParams.set('format', 'auto');
   url.searchParams.set('width', width.toString());
   url.searchParams.set('quality', (quality || 75).toString());
